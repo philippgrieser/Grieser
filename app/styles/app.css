@@ -1,0 +1,336 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-image: url('../assets/images/background_01.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+h1 {
+    padding: 2px 20px 5px 20px;
+    font-size: 20px;
+    color: #002174;
+}
+
+p {
+    padding-left: 16px;
+    margin: 5px 0 5px 0;
+}
+
+td {
+    padding: 0 30px 20px 0;
+}
+
+.header {
+    font-size: 30%;
+    width: 100%;
+    height: 100px;
+    border-bottom: solid 2px #002174;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+.header-left {
+    width: 15%;
+    float: left;
+    text-align: center;
+}
+
+.header-center {
+    width: 70%;
+    float: left;
+    margin-top: 18px;
+}
+
+
+.header-right {
+    width: 15%;
+    float: left;
+    margin-top: 10px;
+}
+
+.header-contact {
+    margin: 10px 10px 10px 10px;
+    padding: 0 0 0 20px;
+    border-left: solid 2px #002174;
+}
+
+.header-contact p {
+  font-size: 14px;
+  margin: 0 0 0 0;
+  color: grey;
+}
+
+.header-contact a:link {
+  margin: 0 0 0 0;
+}
+
+.header img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0px 0px 0px;
+}
+
+.header a {
+    font-size: 20px;
+    margin-right: 35px;
+}
+
+a:link {text-decoration: none; color: #000000;}
+a:visited {text-decoration: underline; color: #000000;}
+a:active {text-decoration: underline; color: #002174;}
+a:hover {text-decoration: underline; color: #002174;}
+
+.childLink a {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.childLink a:link {text-decoration: none; color: grey;}
+.childLink a:visited {text-decoration: underline; color: grey;}
+.childLink a:active {text-decoration: underline; color: #002174;}
+.childLink a:hover {text-decoration: underline; color: #002174;}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed; /* left: 0;*/
+    top: 0;
+}
+
+.top {
+    height: 25%;
+}
+
+.center {
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.left {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.content {
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    border: solid 2px #002174;
+}
+
+.content-text {
+    float: left;
+    height: 100%;
+    width: 65%;
+}
+
+.content-text-text {
+  width: 100%;
+  height: 85%;
+}
+
+.content-footer p {
+  margin-left: 20px;
+  padding-left: 0;
+  border-bottom: solid 2px rgba(0, 33, 116, 0.33);
+  float: left;
+  height: 15%;
+}
+
+.content-footer-text-right {
+  text-align: right;
+}
+
+.content-scroll { /* Team */
+  float: left;
+  height: 100%;
+  width: 68%;
+}
+
+.content-img {
+    float: left;
+    height: 99.999%;
+    width: 32%;
+}
+
+.content-img img {
+    margin: 20px 0 0 20px;
+    height: 92%;
+    width: 92%;
+    border: solid 2px rgba(0, 33, 116, 0.33);
+}
+
+.right {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.bottom {
+    height: 15%;
+}
+
+.impressum {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.impressum a {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.scrollable {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.contact td {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 0 0 20px;
+}
+
+
+.footer-left {
+  padding-left: 20px;
+}
+
+.footer-right p {
+  text-align: right;
+}
+
+.pages a:link {
+  text-align: justify;
+  padding: 0 0 8px 0px;
+}
+
+.pages table {
+  width: 100%;
+  padding-left: 20px;
+  table-layout: auto;
+}
+
+.pages td {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* contact */
+
+.mail-field {
+  width: 100%;
+  border: solid 2px rgba(0, 33, 116, 0.33);
+}
+
+.message-field {
+  padding: 5px 5px 5px 5px;
+  width: 90%;
+  height: 150px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: solid 2px rgba(0, 33, 116, 0.33);
+}
+
+.mail-button {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 2px 3px 2px 3px;
+  border: solid 2px rgba(0, 33, 116, 0.33);
+}
+
+
+/* google maps */
+
+.g-map{
+    height: 100%;
+}
+.g-map-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.gm-style-mtc {
+    display: none;
+}
+
+/* ------ style by screen size ------ */
+
+/* hide center image */
+@media screen and (max-width: 1000px) {
+  .content-img { width: 0; }
+  .content-img img { border: none; }
+  .content-text { width: 99%; }
+  .content-scroll { width: 100%; }
+}
+
+/* header right */
+@media screen and (max-width: 1160px) {
+  .header-contact-contact { display: none; }
+}
+@media screen and (min-width: 1160px) {
+  .header-pages { display: none; }
+  .header-contact { padding: 0 0 0 2px; }
+}
+.header-pages b {
+  padding: 5px 12px 5px 12px;
+  border: solid 2px rgba(0, 33, 116, 0.33);
+}
+
+/* header center */
+@media screen and (max-width: 1160px) {
+  .header-kanzlei .childLink { display: none; }
+  .header-mandanten { display: none;}
+  .header-leistungen .childLink { display: none; }
+  .header-ueberuns { display: none; }
+}
+@media screen and (min-width: 1160px) {
+  .small { display: none; }
+}
+
+/* very small */
+@media screen and (max-width: 720px) {
+  .header-kanzlei { display: none; }
+  .header-mandanten { display: none;}
+  .header-leistungen { display: none; }
+  .header-ueberuns { display: none; }
+  .header-kontakt { display: none; }
+  .left {width: 5%;}
+  .content {width: 90%;}
+  .header-right { display: none; }
+}
+
+@media screen and (min-width: 720px) {
+  .very-small { display: none; }
+}
+.very-small{
+  float: left;
+  margin: 10px 10px 10px 10px;
+  padding: 0 0 0 20px;
+  border-left: solid 2px #002174;
+}
+
+.very-small p {
+  font-size: 14px;
+  margin: 0 0 0 0;
+  color: grey;
+}
+
+.very-small a {
+  margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 500px) {
+  .very-small { border: none; }
+}

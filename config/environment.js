@@ -12,13 +12,17 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
+    gReCaptcha: {
+      siteKey: '6Ld4tQ8UAAAAACw5QRr8n_bViiOITDKEuTLfnDbQ'
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
   };
-
+  ENV['g-map'] = {
+    key: 'AIzaSyBiWlOUWP6xvJlCmlFEtA3FJkZ0O3CcRTc',
+  };
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

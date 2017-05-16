@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("user_xcSjYziGYWXpb616egs1r");
+      })();
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kanzlei</title>
@@ -13,6 +21,8 @@
     <link rel="stylesheet" href="assets/kanzlei.css">
 
     {{content-for "head-footer"}}
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
     {{content-for "body"}}
