@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/components/contact-form.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/router.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/app.sass" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/components/contact-form.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/firmen.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/informationen.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/kanzlei.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/kontakt.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/kontaktformular.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/mandanten.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/pages.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/privat.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/service.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/environment.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+  </component>
+</project>

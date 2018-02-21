@@ -1,0 +1,118 @@
+.header {
+	width: 100%;
+	height: 100px;
+	border-bottom: solid 2px #002174;
+	background-color: white;
+	position: fixed;
+	top: 0;
+
+	a {
+		font-size: 20px;
+		margin-right: 35px;
+	}
+
+	.header-left {
+		width: 15%;
+		float: left;
+		text-align: center;
+
+		a {
+			margin: 0;
+		}
+
+		img {
+			width: 80px;
+			height: 80px;
+			margin: 10px 0 0 0;
+		}
+	}
+
+	.header-center {
+		width: 70%;
+		float: left;
+		padding: 18px 0;
+
+		img {
+			width: 80px;
+			height: 80px;
+			margin: 10px 0 0 0;
+		}
+	}
+
+	.header-right {
+		height: 100%;
+		width: 15%;
+		float: left;
+
+		.header-contact {
+			height: 60.667px;
+			margin-top: 18px;
+			margin-bottom: 18px;
+			border-left: solid 2px #002174;
+
+			p {
+				height: 13px;
+				font-size: 14px;
+				padding-top: 2px;
+				margin-left: 10px;
+				color: grey;
+			}
+
+			a:link {
+				margin: 0 0 0 0;
+			}
+		}
+	}
+
+	.childLink {
+		padding-top: 2px;
+	}
+
+	.childLink a {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+
+	.childLink a:link {
+		text-decoration: none;
+		color: grey;
+	}
+
+	.childLink a:visited {
+		text-decoration: underline;
+		color: grey;
+	}
+
+	.childLink a:active {
+		text-decoration: underline;
+		color: #002174;
+	}
+
+	.childLink a:hover {
+		text-decoration: underline;
+		color: #002174;
+	}
+
+	.very-small {
+		float: left;
+		margin: 4px;
+		padding: 0;
+
+		p {
+			font-size: 14px;
+			margin: 0 0 0 0;
+			color: grey;
+		}
+		a {
+			margin: 0 0 0 0;
+		}
+	}
+
+	.header-pages {
+		position: fixed;
+		right: 20px;
+		top: 35px;
+		border: none;
+	}
+
+}
