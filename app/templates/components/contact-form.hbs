@@ -1,65 +1,63 @@
-
 {{#unless buttonDisabled}}
 
-<p>Senden Sie uns direkt eine Nachricht an: info@steuerberater-grieser.de</p><br/>
+	<p>Senden Sie uns direkt eine Nachricht an: info@steuerberater-grieser.de</p><br/>
 
-<table>
-    <tr>
-        <td style="padding-bottom:5px;">
-            <p style="float:left">Ihr Vor- und Nachname:</p>
-        </td>
-        <td style="padding-bottom:5px;">
-            {{input name="name" class="mail-field" value=valueName}}
-        </td>
-    </tr>
-    <tr>
-        <td style="padding-bottom:5px;">
-            <p style="float:left">Ihre Telefonnummer:</p>
-        </td>
-        <td style="padding-bottom:5px;">
-            {{input name="number" class="mail-field" value=valueNumber}}
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p style="float:left">Ihre Mail-Adresse:</p>
-        </td>
-        <td>
-            {{input name="mail" class="mail-field" value=valueMail}}
-        </td>
-    </tr>
-</table>
+	<table>
+		<tr>
+			<td style="padding-bottom:5px;">
+				<p style="float:left">Ihr Vor- und Nachname:</p>
+			</td>
+			<td style="padding-bottom:5px;">
+				{{input name="name" class="mail-field" value=valueName}}
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-bottom:5px;">
+				<p style="float:left">Ihre Telefonnummer:</p>
+			</td>
+			<td style="padding-bottom:5px;">
+				{{input name="number" class="mail-field" value=valueNumber}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p style="float:left">Ihre Mail-Adresse:</p>
+			</td>
+			<td>
+				{{input name="mail" class="mail-field" value=valueMail}}
+			</td>
+		</tr>
+	</table>
+	<br/>
 
-{{#unless captchaSolved}}
-  <p>Bestätigen Sie das Captcha um fortzufahren:</p>
-  <br/>
-  <div style="padding-left:20px;">
-    {{g-recaptcha onSuccess=(action "onCaptchaResolved")}}
-  </div>
+	{{#unless captchaSolved}}
+		<p>Bestätigen Sie das Captcha um fortzufahren:</p>
+		<br/>
+		<div class="captcha">
+			{{g-recaptcha onSuccess=(action "onCaptchaResolved")}}
+		</div>
+
+	{{else}}
+		{{textarea
+			placeholder="Ihre Nachricht ..."
+			name="message"
+			rows="15"
+			cols="40"
+			value=valueMessage
+			class="message-field"}}
+
+		<br/>
+		<a href="" class="mail-button" {{action 'send'}}>Nachricht senden</a>
+	{{/unless}}
 
 {{else}}
-  {{textarea
-      placeholder="Ihre Nachricht ..."
-      name="message"
-      rows="15"
-      cols="40"
-      style="margin: 0 0 20px 20px; width: 80%;"
-      value=valueMessage
-      class="message-field"}}
+	<p>Nachricht erfolgreich versandt. Vielen Dank, Ihre Anfrage wird schnellstmöglich bearbeitet!</p>
 
-      <br/>
-      <a href="" class="mail-button" {{action 'send'}}>Nachricht senden</a>
-{{/unless}}
-
-{{else}}
-    <p>Nachricht erfolgreich versandt. Vielen Dank, Ihre Anfrage wird schnellstmöglich bearbeitet!</p>
-
-    <p>Ihre Nachricht:</p>
-    {{textarea
-    name="message"
-    rows="15"
-    cols="40"
-    style="margin: 0 0 20px 20px; width: 80%;"
-    value=valueMessage
-    class="message-field"}}
+	<p>Ihre Nachricht:</p>
+	{{textarea
+		name="message"
+		rows="15"
+		cols="40"
+		value=valueMessage
+		class="message-field"}}
 {{/unless}}

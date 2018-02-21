@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+	<!-- RSS Feed -->
+	<script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
 
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function(){
-        emailjs.init("user_xcSjYziGYWXpb616egs1r");
-      })();
-    </script>
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113529080-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-113529080-1');
+	</script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kanzlei</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Contact Form -->
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_xcSjYziGYWXpb616egs1r");
+		})();
+	</script>
 
-    {{content-for "head"}}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Steuerberater Grieser</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/kanzlei.css">
+	{{content-for "head"}}
 
-    {{content-for "head-footer"}}
+	<link rel="stylesheet" href="assets/vendor.css">
+	<link rel="stylesheet" href="assets/kanzlei.css">
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-  </head>
-  <body>
-    {{content-for "body"}}
+	{{content-for "head-footer"}}
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/kanzlei.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+{{content-for "body"}}
 
-    {{content-for "body-footer"}}
-  </body>
+<script src="assets/vendor.js"></script>
+<script src="assets/kanzlei.js"></script>
+
+{{content-for "body-footer"}}
+</body>
 </html>
