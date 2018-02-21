@@ -1,25 +1,15 @@
-<div class="content-img">
-    <img src="../assets/images/informationen_01.png"
-            title="Quelle: https://static.pexels.com/photos/237675/pexels-photo-237675.jpeg"/>
+<div class="content-img informationen"></div>
 
-</div>
+<div class="content-scroll">
+	<div class="scrollable">
+		<h1>Informationen</h1>
+		{{rss-feed}}
+	</div>
 
-<div class="content-text">
-    <div class="content-text-text">
-        <h1>Informationen</h1>
-        <ul>
-            <li>Unsere Unternehmenssoftware: <a href="http://www.datev.de">www.datev.de</a></li>
-        </ul>
-
-        <p>Wird bearbeitet...</p>
-    </div>
-
-    <div class="content-footer">
-      {{#link-to 'mandanten'}}
-          <p>Mandanten</p>
-      {{/link-to}}
-      {{#link-to 'unterstuetzung' class="content-footer-text-right"}}
-          <p>Unterstützung</p>
-      {{/link-to}}
-    </div>
+	<div class="content-footer">
+		<div class="content-footer-content">
+			{{#link-to 'mandanten'}}Mandanten{{/link-to}}
+			{{#link-to 'unterstuetzung' class="content-footer-text-right"}}Unterstützung{{/link-to}}
+		</div>
+	</div>
 </div>

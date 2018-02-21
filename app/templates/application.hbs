@@ -1,125 +1,20 @@
-<!--div class="background">
-    <img src='../assets/images/background_01.jpg' />
-</div-->
-
 <div class="background">
-    <div class="top"></div>
-    <div class="center">
-        <div class="left"></div>
-        <div class="content">
-            {{outlet}}
-        </div>
-        <div class="right"></div>
-    </div>
-    <div class="bottom">
-        <div class="impressum">
-            {{#link-to 'impressum'}}<a href="">Impressum</a>{{/link-to}}
-        </div>
-    </div>
+	<div class="top"></div>
+	<div class="center">
+		<div class="left"></div>
+		<div class="content">
+			<div class="content-padding">
+				{{outlet}}
+			</div>
+		</div>
+		<div class="right"></div>
+	</div>
+	<div class="bottom">
+		<div class="impressum">
+			{{#link-to 'impressum'}}<a href="">Impressum</a>{{/link-to}}
+		</div>
+	</div>
 </div>
 
-<div class="header">
-
-    <div class="header-left">
-        {{#link-to 'index'}}<img src='../assets/images/logo_01.png' />{{/link-to}}
-    </div>
-
-    <div class="header-center">
-
-        <div class="header-kanzlei" style="float: left;">
-            {{#link-to 'kanzlei'}}<a href="">Kanzlei</a>{{/link-to}}
-            <div class="childLink">
-                {{#link-to 'philosophie'}}<a href="">Philosophie</a>{{/link-to}}
-                <br/>
-                {{#link-to 'service'}}<a href="">Service</a>{{/link-to}}
-            </div>
-            <div class="small">
-              {{#link-to 'mandanten'}}<a href="">Mandanten</a>{{/link-to}}
-            </div>
-        </div>
-
-        <div class="header-mandanten" style="float: left;">
-            {{#link-to 'mandanten'}}<a href="">Mandanten</a>{{/link-to}}
-            <div class="childLink">
-                {{#link-to 'informationen'}}<a href="">Informationen</a>{{/link-to}}
-                <br/>
-                {{#link-to 'unterstuetzung'}}<a href="">Unterstützung</a>{{/link-to}}
-            </div>
-        </div>
-
-        <div class="header-leistungen" style="float: left;">
-            {{#link-to 'leistungen'}}<a href="">Leistungen</a>{{/link-to}}
-            <div class="childLink">
-                {{#link-to 'firmen'}}<a href="">Firmenkunden</a>{{/link-to}}
-                <br/>
-                {{#link-to 'privat'}}<a href="">Privatkunden</a>{{/link-to}}
-            </div>
-            <div class="small">
-              {{#link-to 'ueberuns'}}<a href="">Über Uns</a>{{/link-to}}
-            </div>
-        </div>
-
-        <div class="header-ueberuns" style="float: left;">
-            {{#link-to 'ueberuns'}}<a href="">Über Uns</a>{{/link-to}}
-            <div class="childLink">
-                {{#link-to 'team'}}<a href="">Das Team</a>{{/link-to}}
-                <br/>
-                {{#link-to 'jobs'}}<a href="">Jobangebote</a>{{/link-to}}
-            </div>
-        </div>
-
-        <div class="header-kontakt" style="float: left;">
-            {{#link-to 'kontakt'}}<a href="">Kontakt</a>{{/link-to}}
-            <div class="childLink">
-                {{#link-to 'karte'}}<a href="">Karte Anfahrt</a>{{/link-to}}
-                <br/>
-                {{#link-to 'kontaktformular'}}<a href="">Kontaktformular</a>{{/link-to}}
-            </div>
-        </div>
-
-        <div class="very-small">
-            <div>
-              {{#link-to 'kontakt'}}
-                  <p><b>Steuerbüro Grieser</b></p>
-                  <p>Bahnhof 11</p>
-                  <p>88299 Leutkirch</p>
-              {{/link-to}}
-            </div>
-        </div>
-
-        <div class="very-small header-pages" style="position: fixed; right: 20px; top: 20px; border: none;">
-            <div>
-                <div>
-                  <br/>
-                  {{#link-to 'pages'}}
-                      <p><b>Menü</b></p>
-                  {{/link-to}}
-                  <br/>
-              </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="header-right">
-        <div class="header-contact">
-            <div class="header-contact-contact">
-              {{#link-to 'kontakt'}}
-                <p><b>Steuerbüro Grieser</b></p>
-                <p>Bahnhof 11</p>
-                <p>88299 Leutkirch</p>
-              {{/link-to}}
-            </div>
-            <div class="header-pages">
-              <br/>
-              {{#link-to 'pages'}}
-                <p><b>Menü</b></p>
-              {{/link-to}}
-              <br/>
-            </div>
-        </div>
-    </div>
-
-
-</div>
+{{header-container}}
 
