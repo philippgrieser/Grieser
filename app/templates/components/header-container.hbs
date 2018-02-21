@@ -1,0 +1,56 @@
+<div class="header">
+
+	<div class="header-left">
+		{{#link-to 'index'}}<img src='../assets/images/logo_01.png'/>{{/link-to}}
+	</div>
+
+	<div class="header-center">
+		{{#each items as |item|}}
+			<div class="header-item" style="float: left;">
+				{{#link-to item.link}}{{item.linkText}}{{/link-to}}
+				<div class="childLink">
+					{{#link-to item.link2}}{{item.link2Text}}{{/link-to}}
+					<br/>
+					{{#link-to item.link3}}{{item.link3Text}}{{/link-to}}
+				</div>
+			</div>
+		{{/each}}
+
+		<div class="very-small address">
+			<div>
+				{{#link-to 'kontakt'}}
+					<p><b>Steuerbüro Grieser</b></p>
+					<p>Bahnhof 11</p>
+					<p>88299 Leutkirch</p>
+				{{/link-to}}
+			</div>
+		</div>
+
+		<div class="very-small header-pages">
+			{{#link-to 'pages'}}
+				<p><b>Menü</b></p>
+			{{/link-to}}
+		</div>
+
+	</div>
+
+	<div class="header-right">
+		<div class="header-contact">
+			{{#link-to 'kontakt'}}
+				<p><b>Steuerbüro&nbsp;Grieser</b></p>
+				<p>Bahnhof 11</p>
+				<p>88299 Leutkirch</p>
+			{{/link-to}}
+
+			<div class="header-pages very-small">
+				<br/>
+				{{#link-to 'pages'}}
+					<p><b>Menü</b></p>
+				{{/link-to}}
+				<br/>
+			</div>
+		</div>
+	</div>
+
+	{{yield}}
+</div>

@@ -1,0 +1,23 @@
+@media screen and (max-width: 500px) {
+	.address {
+		display: none;
+	}
+
+	.header {
+		height: 70px;
+
+		.header-left img {
+			width: 70px;
+			height: 70px;
+			margin: 0;
+		}
+
+		.header-pages {
+			top: 20px;
+		}
+
+		.content {
+			flex: 30;
+		}
+	}
+}
