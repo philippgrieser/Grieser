@@ -26,6 +26,12 @@ h1 {
 	font-size: 1.2rem;
 }
 
+h2 {
+	padding: 20px 20px 5px 2%;
+	margin-top: 0;
+	font-size: 1rem;
+}
+
 p {
 	padding-left: 2%;
 	margin: 5px 0 5px 0;
@@ -168,7 +174,7 @@ a:hover {
 	width: 68%;
 	overflow: hidden;
 	position: relative;
-	border-left: 2px solid #efefef;
+	border-left: 2px solid #ebebeb;
 	margin-left: 1.4%;
 }
 
@@ -198,6 +204,18 @@ a:hover {
 }
 
 .impressum a {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.datenschutz {
+	position: fixed;
+	right: 130px;
+	bottom: 10px;
+}
+
+.datenschutz a {
 	color: white;
 	font-size: 20px;
 	text-align: center;
@@ -435,6 +453,10 @@ a:hover {
 	}
 
 	.impressum {
+		display: none;
+	}
+
+	.datenschutz {
 		display: none;
 	}
 }

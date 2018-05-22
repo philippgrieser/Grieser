@@ -24,6 +24,7 @@ Router.map(function() {
   this.route('privat');
   this.route('kontaktformular');
   this.route('pages');
+  this.route('datenschutz');
 });
 
 export default Router;
