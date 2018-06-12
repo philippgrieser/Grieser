@@ -1,23 +1,26 @@
-<div class="background">
-	<div class="top"></div>
-	<div class="center">
-		<div class="left"></div>
-		<div class="content">
-			<div class="content-padding">
-				{{outlet}}
-			</div>
-		</div>
-		<div class="right"></div>
-	</div>
-	<div class="bottom">
-		<div class="datenschutz">
-			{{#link-to 'datenschutz'}}<a href="">Datenschutzerklärung</a>{{/link-to}}
-		</div>
-		<div class="impressum">
-			{{#link-to 'impressum'}}<a href="">Impressum</a>{{/link-to}}
-		</div>
-	</div>
-</div>
+{{#wrapper-table}}
+
+  <div class="background">
+    <div class="top"></div>
+    <div class="center">
+      <div class="left"></div>
+      <div class="content">
+        <div class="content-padding">
+          {{outlet}}
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+    <div class="bottom">
+      <div class="datenschutz">
+        {{#link-to 'datenschutz'}}<a href="">Datenschutzerklärung</a>{{/link-to}}
+      </div>
+      <div class="impressum">
+        {{#link-to 'impressum'}}<a href="">Impressum</a>{{/link-to}}
+      </div>
+    </div>
+  </div>
+
+{{/wrapper-table}}
 
 {{header-container}}
-

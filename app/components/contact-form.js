@@ -8,7 +8,7 @@ export default Ember.Component.extend({
 	valueNumber: '',
 	valueMessage: '',
 
-	actions: {
+	/*actions: {
 		send(){
 			this.set('buttonDisabled', true);
 			emailjs.send("default_service", "webseite_template", {
@@ -23,5 +23,5 @@ export default Ember.Component.extend({
 				this.set('captchaSolved', true);
 			}
 		},
-	}
+	}*/
 });

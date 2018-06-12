@@ -29,12 +29,5 @@ export default Ember.Component.extend({
 		link2Text: 'Das Team',
 		link3: 'jobs',
 		link3Text: 'Jobangebote',
-	}, {
-		link: 'kontakt',
-		linkText: 'Kontakt',
-		link2: 'karte',
-		link2Text: 'Karte Anfahrt',
-		link3: 'kontaktformular',
-		link3Text: 'Kontaktformular',
-	},],
+	}],
 });

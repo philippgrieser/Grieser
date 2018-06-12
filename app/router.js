@@ -22,9 +22,12 @@ Router.map(function() {
   this.route('jobs');
   this.route('firmen');
   this.route('privat');
-  this.route('kontaktformular');
+  //this.route('kontaktformular');
   this.route('pages');
   this.route('datenschutz');
+
+  //
+  // this.route('index', { path: '/*wildcard' });
 });
 
 export default Router;

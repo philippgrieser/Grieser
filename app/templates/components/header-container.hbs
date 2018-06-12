@@ -16,6 +16,13 @@
 			</div>
 		{{/each}}
 
+    <div class="header-item" style="float: left;">
+      {{#link-to 'kontakt'}}Kontakt{{/link-to}}
+      <div class="childLink">
+        {{#link-to 'karte'}}<img src='../assets/images/map.png' style="height:24px; width:16px;margin-right:4px"/>Karte{{/link-to}}
+      </div>
+    </div>
+
 		<div class="very-small address">
 			<div>
 				{{#link-to 'kontakt'}}
@@ -37,7 +44,7 @@
 	<div class="header-right">
 		<div class="header-contact">
 			{{#link-to 'kontakt'}}
-				<p><b>Steuerbüro&nbsp;Grieser</b></p>
+				<p>Steuerbüro&nbsp;Grieser</p>
 				<p>Bahnhof 11</p>
 				<p>88299 Leutkirch</p>
 			{{/link-to}}
