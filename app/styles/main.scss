@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-	padding: 20px 20px 5px 2%;
+	padding: 20px 20px 5px 14px;
 	margin-top: 0;
 	font-size: 1rem;
 }
@@ -43,16 +43,12 @@ p {
 
 table {
 	width: 100%;
-	padding-left: 2%;
+	padding-left: 14px;
 }
 
 td {
 	line-height: 1.2rem;
 	padding-bottom: 14px;
-
-	p {
-		white-space: nowrap;
-	}
 }
 
 a:link {
@@ -90,23 +86,21 @@ a:hover {
 	height: 62%;
 	background-color: rgba(255, 255, 255, 0.3);
 	display: flex;
+  width: 100%;
 	flex-direction: row;
 }
 
 .left {
+  margin-left: -14px;
 	height: 100%;
-	float: left;
-	padding-top: 200px;
-	padding-bottom: 200px;
-	flex: 1;
+  width: 15%;
 }
 
 .content {
+  width: 70%;
 	height: 100%;
-	float: left;
 	background-color: white;
 	border: solid 1px #002174;
-	flex: 4.667;
 }
 
 .content-padding {
@@ -131,10 +125,6 @@ a:hover {
 	flex: 10;
 }
 
-.captcha {
-	margin-left: 2%;
-}
-
 .content-footer {
 	background: linear-gradient(transparent, white, white);
 	position: absolute;
@@ -152,11 +142,15 @@ a:hover {
 
 .content-footer-content {
 	width: 100%;
-	border-bottom: solid 1px rgb(155, 166, 194);
+	border-bottom: solid 1px #EBECE9;
 }
 
 .content-footer a {
-	color: rgb(130, 139, 162);
+  font-size: 14px;
+  margin-bottom: -1px;
+  border: 1px solid #EBECE9;
+  padding: 2px;
+	color: rgba(159, 159, 159, 0.98);
 }
 
 a:hover {
@@ -166,19 +160,20 @@ a:hover {
 
 .content-footer-text-right {
 	float: right;
+  margin-top: -4px;
 }
 
 .content-scroll {
 	float: left;
 	height: 100%;
-	width: 66%;
+	width: 70%;
 	overflow: hidden;
 	position: relative;
   margin-right: 6px;
 }
 
 .content-img-container {
-  width: 33%;
+  width: 30%;
   height: 100%;
   padding: 6px;
   border: solid 1px #EBECE9;
@@ -194,8 +189,7 @@ a:hover {
 
 .right {
 	height: 100%;
-	float: left;
-	flex: 1;
+  width: 15%;
 }
 
 .bottom {
@@ -241,11 +235,11 @@ a:hover {
 }
 
 .scrollable::-webkit-scrollbar {
-	width: 2px;
+	width: 1px;
 }
 
 .scrollable::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 2px rgba(0, 73, 255, 0);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 73, 255, 0);
 }
 
 .scrollable::-webkit-scrollbar-thumb {
@@ -256,10 +250,15 @@ a:hover {
 
 .contact {
 	width: 50%;
-}
 
-.contact td {
-	padding-bottom: 0;
+  td {
+    padding-bottom: 0;
+    padding-left: 0;
+
+    p {
+      padding: 0;
+    }
+  }
 }
 
 .footer-left {
@@ -286,28 +285,6 @@ a:hover {
 	margin: 0 0 0 0;
 }
 
-/* contact */
-
-.mail-field {
-	width: 100%;
-	border: solid 2px rgb(155, 166, 194);
-}
-
-.message-field {
-	padding: 5px 5px 5px 5px;
-	height: 120px;
-	width: 95%;
-	margin-left: 4%;
-	margin-bottom: 20px;
-	border: solid 2px rgb(155, 166, 194);
-}
-
-.mail-button {
-	margin: 4%;
-	padding: 2px 2px 2px 3px;
-	border: solid 2px rgb(155, 166, 194);
-}
-
 /* google maps */
 
 .g-map {
@@ -328,7 +305,7 @@ a:hover {
 
 /* hide center image */
 @media screen and (max-width: 1000px) {
-	.content-img {
+	.content-img-container {
 		display: none;
 	}
 
@@ -340,39 +317,6 @@ a:hover {
 		margin-left: 0;
 	}
 
-	h1 {
-		padding-left: 0;
-	}
-
-	p {
-		padding-left: 0;
-	}
-
-	.captcha {
-		margin-left: 0;
-	}
-
-	table {
-		padding-left: 0;
-	}
-
-	table:not(.contact) {
-		padding-left: 0;
-
-		td{
-			display:block; width:100%;
-		}
-	}
-
-	.content-footer {
-		padding-left: 0;
-		padding-bottom: 1%;
-	}
-
-	.content-img {
-		border: none;
-	}
-
 	.content-text {
 		width: 99%;
 	}
@@ -380,7 +324,7 @@ a:hover {
 	.content-scroll {
 		width: 100%;
 		border-left: none;
-		margin: 1%;
+    margin-right: 0;
 	}
 }
 
