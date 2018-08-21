@@ -3,13 +3,17 @@
   <div class="background">
     <div class="top"></div>
     <div class="center">
-      <div class="left"></div>
+      <div class="left">
+        {{arrow-navigation direction="back"}}
+      </div>
       <div class="content">
         <div class="content-padding">
           {{outlet}}
         </div>
       </div>
-      <div class="right"></div>
+      <div class="right">
+       {{arrow-navigation direction="next"}}
+      </div>
     </div>
     <div class="bottom">
       <div class="datenschutz">

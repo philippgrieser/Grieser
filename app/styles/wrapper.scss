@@ -19,23 +19,23 @@
   }
 
   .wrap-outer-corner {
-    height: 6px;
-    width: 6px;
-    background-color: #EBECE9;
+    height: $margin_table;
+    width: $margin_table;
+    background-color: $color_tertiary;
   }
 
   .wrap-outer-corner-top {
-    height: 107px;
-    width: 6px;
-    background-color: #EBECE9;
+    height: 101px + $margin_table;
+    width: $margin_table;
+    background-color: $color_tertiary;
   }
 
   .wrap-outer-vertical {
-    background-color: #EBECE9;
+    background-color: $color_tertiary;
   }
 
   .wrap-outer-horizontal {
-    background-color: #EBECE9;
+    background-color: $color_tertiary;
   }
 
   .wrap-outer-center {
@@ -64,14 +64,14 @@
   }
 
   .wrap-inner-corner {
-    height: 13px;
-    width: 13px;
+    height: 1px + $margin_table + $margin_table;
+    width: 1px + $margin_table + $margin_table;
     background-color: white;
   }
 
   .wrap-inner-corner-top {
-    height: 113px;
-    width: 13px;
+    height: 101px + $margin_table + $margin_table;
+    width: 1px + $margin_table + $margin_table;
     background-color: white;
   }
 
@@ -85,7 +85,6 @@
 
   .wrap-inner-center {
     background-image: url('../assets/images/background_01.jpg');
-    background-position-y: -40px;
-    background-size: 100% auto;
+    background-size: 100% 100%;
   }
 }

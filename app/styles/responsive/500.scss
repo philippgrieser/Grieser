@@ -1,7 +1,21 @@
+/*
 @media screen and (max-width: 500px) {
 	.address {
 		display: none;
 	}
+
+  !*.wrap-inner-corner-top {
+    height: 79px;
+  }
+  .wrap-inner-horizontal {
+    height: 79px;
+  }*!
+
+  .wrap-outer .wrap-outer-corner-top {
+    .wrap-outer-corner-top {
+      height: 74px;
+    }
+  }
 
 	.header {
 		height: 70px;
@@ -25,3 +39,4 @@
 		flex: 16;
 	}
 }
+*/
