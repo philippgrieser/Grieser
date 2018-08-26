@@ -23,7 +23,7 @@ ul {
 
 h1 {
 	padding: 6px;
-	margin: 6px 6px 24px 6px;
+	margin: 6px 6px 20px 6px;
   color: $color_highlight_primary;
 	font-size: 1.2rem;
   font-weight: normal;
@@ -200,11 +200,12 @@ a:hover {
 }
 
 .contact {
-	width: 50%;
+	width: auto;
 
   td {
     padding-bottom: 0;
     padding-left: 0;
+	  padding-right: 10px;
 
     p {
       padding: 0;
@@ -296,9 +297,9 @@ a:hover {
 	}
 }
 
-.header-pages b {
+.header-pages p {
 	padding: 5px 12px 5px 12px;
-	border: solid 2px rgb(155, 166, 194);
+	border: solid 1px rgb(155, 166, 194);
 }
 
 /* very small */
@@ -320,7 +321,7 @@ a:hover {
 
 @media screen and (max-height: 800px) {
 	.top {
-		height: 22%;
+		height: 21%;
 	}
 	.center {
 		height: 68%;
@@ -338,7 +339,27 @@ a:hover {
 		display: none;
 	}
 
-/*	.header {
+	.wrap-outer-corner-top {
+		height: 74px;
+	}
+
+	.wrap-inner-corner-top {
+		height: 78px;
+	}
+
+	.header-item {
+		display: none;
+	}
+
+	.header-right {
+		display: none;
+	}
+
+	.header-pages {
+		display: block;
+	}
+
+	.header {
 		height: 70px;
 
 		.header-left img {
@@ -354,7 +375,7 @@ a:hover {
 		.content {
 			flex: 16;
 		}
-	}*/
+	}
 
 	.impressum {
 		display: none;
@@ -365,8 +386,3 @@ a:hover {
 	}
 }
 
-@media screen and (max-height: 400px) {
-	.top {
-		height: 23%;
-	}
-}

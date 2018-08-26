@@ -10,13 +10,27 @@
 }
 
 .arrow-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-  .arrow {
+	a {
+		color: white;
+	}
 
-  }
+	.navigation-text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		p {
+
+			padding: 4px 6px;
+			color: white;
+			margin: 0;
+		}
+	}
 }

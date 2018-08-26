@@ -112,6 +112,9 @@
 	}
 
 	.header-pages {
+		p {
+			color: $color_primary;
+		}
 		position: fixed;
 		right: 20px;
 		top: 35px;

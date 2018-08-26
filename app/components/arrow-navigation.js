@@ -10,7 +10,6 @@ export default Ember.Component.extend({
   direction: '',
   show: false,
 
-
   transform: computed('direction', function() {
     if(this.get('direction') === 'back') {
       return 'rotate(180)';
