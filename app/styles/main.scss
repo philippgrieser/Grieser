@@ -17,26 +17,30 @@ body {
 }
 
 ul {
-	margin-left: 4%;
-	padding-left: 4%;
+	margin-left: 22px;
+	padding-left: 22px;
+
+	li {
+		padding-bottom: 6px;
+	}
 }
 
 h1 {
-	margin: 28px 28px 28px 28px;
+	margin: 22px 22px 18px 22px;
   color: $color_highlight_primary;
 	font-size: 1.2rem;
   font-weight: normal;
 }
 
 h2 {
-	padding: 20px 20px 0 28px;
+	padding: 22px 22px 0 22px;
 	margin: 0;
 	font-size: 1rem;
 }
 
 p {
-	padding-left: 28px;
-	padding-right: 28px;
+	padding-left: 22px;
+	padding-right: 22px;
 	margin: 5px 0 5px 0;
 	line-height: 24px;
 }
@@ -200,14 +204,17 @@ a:hover {
 
 .contact {
 	width: auto;
+	margin: 0;
+	padding-top: 0;
+	padding-left: 22px;
 
   td {
-    padding-bottom: 0;
-    padding-left: 0;
-	  padding-right: 10px;
+    padding-right: 8px;
+	  margin: 0;
 
     p {
       padding: 0;
+	    margin: 0;
     }
   }
 }
