@@ -30,6 +30,8 @@ h1 {
   color: $color_highlight_primary;
 	font-size: 1.2rem;
   font-weight: normal;
+	border-left: 1px solid $color_secondary;
+	padding-left: 6px;
 }
 
 h2 {
