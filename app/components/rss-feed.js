@@ -4,10 +4,9 @@ import moment from "moment";
 export default Ember.Component.extend({
 	didInsertElement() {
 		const url = 'https://www.datev.de/web/de/rss/nachrichten-steuern.rss';
-		const query = 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from feednormalizer where url="' + url + '"') + '&format=json';
 
 		// send request
-		Ember.$.getJSON(query, function (data, status, errorThrown) {
+		Ember.$.getJSON(url, function (data, status, errorThrown) {
 			if (status === 'success') {
 				$.each(data.query.results.rss.channel.item, function (key, value) {
 					console.log(value);
@@ -26,7 +25,7 @@ export default Ember.Component.extend({
 				console.log(errorThrown);
 
 				// * show error message
-				alert('Could not load RSS feed!');
+				// alert('Could not load RSS feed!');
 			}
 		});
 	},
